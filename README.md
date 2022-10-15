@@ -11,3 +11,7 @@ React app
 ## Technologies, Languages and Tools used
 * React
 * Vite
+* Vite-Test
+* Testing-Library
+* Jest-Dom
+* Eslint & prettier 
