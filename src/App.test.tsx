@@ -1,17 +1,26 @@
 import { render, screen } from '@testing-library/react';
 import React from 'react';
 import { describe, it } from 'vitest';
-import App from './App';
+import { App, WrappedApp } from './App';
+import { MemoryRouter } from 'react-router-dom';
 
 describe('App', () => {
   it('Renders hello world!', () => {
     // ARRANGE
-    render(<App />);
+    render(<WrappedApp />);
     //ACT
     //EXPECT
     expect(screen.getByRole('heading', {
-      level: 1
+      level: 1,
     })
     ).toHaveTextContent('Hello World!');
   });
+
+  it('renders not found if invalid path', () => {
+    render(
+      <MemoryRouter initialEntries={['/banana']}>
+        <App />
+      </MemoryRouter>
+    );
+  })
 });
