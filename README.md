@@ -15,3 +15,6 @@ React app
 * Testing-Library
 * Jest-Dom
 * Eslint & prettier 
+
+## API
+using api from https://www.dnd5eapi.co/
