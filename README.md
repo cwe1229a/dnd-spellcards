@@ -14,6 +14,7 @@ React app
 * Vite-Test
 * Testing-Library
 * Jest-Dom
+* Material UI
 * Eslint & prettier 
 
 ## API
